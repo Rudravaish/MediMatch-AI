@@ -1,0 +1,91 @@
+💬 Expanded chatbot functionality (alcohol, supplements, drug combinations)
+
+🧠 Rule-based logic with keywords + database lookup
+
+🎨 Clean UI formatting for chat responses
+
+✅ Button recheck to ensure nothing breaks
+
+🧪 Testing instructions for full functionality
+
+🧠 Replit AI Agent Prompt — Expand Chatbot + Ensure Everything Still Works
+Please expand the Medication Assistant chatbot and double check that everything else in the app still functions properly. This should be done in no more than 3 checkpoints.
+
+✅ 1. Expand Chat Assistant to Handle Advanced Questions
+Update the chatbot to handle user questions about:
+
+🥃 A. Mixing medications with alcohol
+Trigger words: alcohol, drink, beer, wine
+
+Example: “Can I drink on Zoloft?”
+
+Response: Warn if dangerous interaction exists
+
+🌿 B. Mixing with supplements
+Trigger words: turmeric, omega, vitamin, zinc, natural, magnesium
+
+Example: “Can I take turmeric with this?”
+
+Response: Respond with known interaction info or safety tip
+
+💊 C. Combining with other medications
+Trigger words: mix, combine, with [drug], interact, conflict
+
+Example: “Can I take Advil and Xanax together?”
+
+Response: Use a small database of known drug conflicts to provide guidance
+
+Use rule-based logic:
+
+Match the user input against keywords + current medication
+
+Lookup from a defined dictionary (or create one inline) with known combos
+
+Add fallback messages if no match is found
+
+✅ Format responses clearly with spacing and optional icons (like ⚠️ or ✅)
+
+✅ 2. Create Example Responses Like:
+Zoloft + Alcohol → “Avoid mixing Zoloft with alcohol. It can cause severe drowsiness and increase side effects.”
+
+Turmeric + Diphenhydramine → “No major known issues, but always consult a doctor when using supplements.”
+
+Advil + Xanax → “These are often safe together, but may increase drowsiness. Use caution.”
+
+✅ 3. Add Suggested Questions Under Chat Input
+Include clickable suggested questions like:
+
+“Can I drink with this?”
+
+“Is turmeric safe with this?”
+
+“Can I combine this with Advil?”
+
+Clicking one should auto-fill and trigger a response.
+
+✅ 4. Double Check All Other Buttons Still Work
+After implementing this feature, please verify that the following buttons are still working and unaffected:
+
+🔁 Find Alternatives → Displays full medication suggestions
+
+🧼 Start Over → Resets all fields and clears output
+
+💬 Ask → Responds correctly to typed questions
+
+📋 Suggested Question Buttons → Populate input and respond automatically
+
+✅ Confirm no conflicts were introduced by expanding the chat logic.
+
+🧪 5. Test With These Realistic Questions:
+“Can I drink on Zoloft?”
+
+“Is turmeric okay with Diphenhydramine?”
+
+“What happens if I combine Advil and Xanax?”
+
+“Does Tylenol interact with this?”
+
+“Is it safe to take magnesium?”
+
+✅ Output should be clear, spaced well, and relevant to the medication in context.
+
